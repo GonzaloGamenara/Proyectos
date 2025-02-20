@@ -36,3 +36,16 @@ async function showRandomSolarSystems(){
 }
 
 showRandomSolarSystems();
+
+//BOTONES DE PRUEBA
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("bt_prueba1").addEventListener("click", function() {
+        document.getElementById("main_div").style.display = "none";
+        document.getElementById("planet_div").style.display = "block";
+    });
+
+    document.getElementById("bt_prueba2").addEventListener("click", function() {
+        document.getElementById("main_div").style.display = "block";
+        document.getElementById("planet_div").style.display = "none";
+    });
+});

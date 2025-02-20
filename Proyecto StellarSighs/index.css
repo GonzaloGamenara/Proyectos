@@ -27,6 +27,10 @@ canvas {
     z-index: -1; /* Lo envía al fondo */
 }
 
+#main_div{
+    display: block;
+}
+
 body{
     background-color: var(--color-fondo);
     display: flex;
@@ -102,26 +106,104 @@ body{
     color: var(--color-fondo);
 }
 
+#planet_div{
+    display: none;
+}
+
 .mostrar_planetas{
-    background-color: red;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.titulo_planetas{
+    color: var(--color-texto);
+    font-size: 80px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.sistema_solar{
+    background: none;
+    box-shadow: none;
+    border: var(--color-texto) 1px solid;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    color: var(--color-texto);
+    font-size: 30px;
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.sistema_solar:hover{
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+}
+
+.div_datos{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .ls_datos{
     display: flex;
+    text-align: center;
+    justify-content:center ;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.bt_datos{
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: var(--color-texto);
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.nombre_planeta{
+    color: var(--color-texto);
+    font-size: 40px;
 }
 
 .parte_inferior{
     display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
 }
 
 .img_planeta{
-    width: 300px;
-    animation: rotation 120s infinite linear;
-    
+    width: 800px;
+    animation: rotation 240s infinite linear;
 }
+
+.bt_izquierdo,.bt_derecho{
+    background:none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 50px;
+}
+
+#ico_bt{
+   font-size: 100px;
+}
+
+#ico_bt:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
 
 @keyframes rotation{
     0%{

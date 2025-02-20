@@ -19,12 +19,12 @@
     <body>
         <canvas id="starCanvas"></canvas> <!--  Inicio  -->
         <main>
-            <div class="home">
+            <div id="main_div" class="home">
                 <h1 class="titulo">StellarSights</h1>
                 <p class="sub_titulo">Elije el sistema solar para visitarlo</p>
                 <div class="div_sistemas">
                     <ul class="lista_sistemas">
-                        <li class="sistema"><button class="button_s"><i id="i_button_s" class="fa-solid fa-satellite-dish fa-beat-fade" style="color: #ffffff;"></i></button></li>
+                        <li class="sistema"><button id="bt_prueba1" class="button_s"><i id="i_button_s" class="fa-solid fa-satellite-dish fa-beat-fade" style="color: #ffffff;"></i></button></li>
                         <li class="sistema"><button class="button_s"> <i id="i_button_s" class="fa-solid fa-satellite-dish fa-beat-fade" style="color: #ffffff;"></i></button></li>
                         <li class="sistema"><button class="button_s"><i id="i_button_s" class="fa-solid fa-satellite-dish fa-beat-fade" style="color: #ffffff;"></i></button></li>
                         <li class="sistema"><button class="button_s"><i id="i_button_s" class="fa-solid fa-satellite-dish fa-beat-fade" style="color: #ffffff;"></i></button></li>
@@ -33,24 +33,24 @@
                     </ul>
                 </div>
             </div>
-            <div class="mostrar_planetas">
+            <div id="planet_div" class="mostrar_planetas">
                 <div class="parte_superior">
                     <h1 class="titulo_planetas">StellarSights</h1>
-                    <button class="sistema_solar"></button>
+                    <button id="bt_prueba2" class="sistema_solar">Via Lactea</button>
                     <div class="div_datos">
                         <ul class="ls_datos">
-                            <li><button class="bt_datos">Dato 1</button></li>
-                            <li><button class="bt_datos">Dato 2</button></li>
-                            <li><button class="bt_datos">Dato 3</button></li>
-                            <li><button class="bt_datos">Dato 4</button></li>
+                            <li class="li_datos"><button class="bt_datos">Temperatura 17 C</button></li>
+                            <li class="li_datos"><button class="bt_datos">Masa 5,97× 10^24 kg</button></li>
+                            <li class="li_datos"><button class="bt_datos"> Radio 6,378 km</button></li>
+                            <li class="li_datos"><button class="bt_datos">Tipo Terrestre</button></li>
                         </ul>
                     </div>
-                    <h2 class="nombre_planeta"></h2>
+                    <h2 class="nombre_planeta">LA TIERRA</h2>
                 </div>
                 <div class="parte_inferior">
-                    <button class="bt_izquierdo">Flecha izquierda</button>
+                    <button class="bt_izquierdo"><i id="ico_bt" class="fa-solid fa-left-long" style="color: rgba(255,255,255,0.1);"></i></button>
                     <img class="img_planeta" src="Tierra.png">
-                    <button class="bt_derecho">Flecha derecha</button>
+                    <button class="bt_derecho"><i id="ico_bt" class="fa-solid fa-right-long" style="color: rgba(255,255,255,0.1);"></i></button>
                 </div>
             </div>
         </main>
