@@ -101,3 +101,33 @@ body{
     background-color:var(--color-texto) ;
     color: var(--color-fondo);
 }
+
+.mostrar_planetas{
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ls_datos{
+    display: flex;
+}
+
+.parte_inferior{
+    display: flex;
+}
+
+.img_planeta{
+    width: 300px;
+    animation: rotation 120s infinite linear;
+    
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{ 
+        transform: rotate(360deg);
+    }
+}
